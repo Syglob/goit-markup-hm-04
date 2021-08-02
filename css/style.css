@@ -166,7 +166,12 @@ body {
   margin-right: auto;
   max-width: 1600px;
   height: 600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img_back.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/Img_back.jpg);
 }
 .hero-title {
   font-weight: 900;
@@ -331,7 +336,8 @@ button {
 .filter:focus {
   color: var(--button-color);
   background-color: var(--link-active-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*=======main=======*/
 .services {
@@ -522,7 +528,8 @@ footer {
 .text-card {
   background-color: var(--white-color);
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .text-card:not(:last-child) {
   margin-right: 30px;
@@ -574,52 +581,49 @@ footer {
 }
 
 /*=========client section=========*/
-.clients-section{
+.clients-section {
   padding: 94px 0;
 }
 
-.clients-text{
-font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--link-color);
+.clients-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--link-color);
 
-margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 .clients-list {
   display: flex;
   justify-content: space-between;
 }
-.clients-list svg{
+.clients-list svg {
   width: 170px;
   height: 92px;
-  border: 1px solid  rgba(175, 177, 184, 1);
+  border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
   padding: 16px 32px;
   fill: var(--social-icon-color);
 }
 
 .clients-link:hover .clients-svg,
-.clients-link:focus .clients-svg{
+.clients-link:focus .clients-svg {
   fill: var(--link-active-color);
-  border: 1px solid  var(--link-active-color);
+  border: 1px solid var(--link-active-color);
 }
-
-
-
 
 /*===========fooooooter============*/
 footer {
   padding: 60px 0;
 }
 
-.footer{
-  display:flex;
+.footer {
+  display: flex;
 }
 
-.test-footer{
+.test-footer {
   display: inline-block;
   margin-right: 70px;
 }
@@ -633,31 +637,31 @@ footer {
   margin-bottom: 9px;
 }
 /*=============footer social link==========*/
-.footer-socia-text{
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color:var(--white-color);
-margin-bottom: 20px;
+.footer-socia-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
 }
 
-.footer-social{
+.footer-social {
   padding-top: 15px;
 }
-.footer-socia-list{
+.footer-socia-list {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-social-svg{
+.footer-social-svg {
   width: 20px;
   height: 20px;
   fill: var(--white-color);
 }
 
-.footer-social-link{
+.footer-social-link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -669,8 +673,8 @@ margin-bottom: 20px;
 }
 
 .footer-social-link:hover,
-.footer-social-link:focus{
-  background-color:var(--link-active-color);
+.footer-social-link:focus {
+  background-color: var(--link-active-color);
 }
 
 /*=============portfolio page==========*/
@@ -709,4 +713,10 @@ margin-bottom: 20px;
 
 .portfolio-discription {
   padding: 20px 24px;
+}
+
+.flex:hover, 
+.flex:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
