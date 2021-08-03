@@ -215,6 +215,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 10px;
 }
 .our-team {
   background-color: var(--button-color);
@@ -537,7 +538,7 @@ footer {
 
 .card-wrap {
   text-align: center;
-  padding: 30px 0 16px 0;
+  padding: 30px 0;
 }
 
 .card-wrap h3 {
@@ -546,11 +547,7 @@ footer {
 
 .social-box {
   display: flex;
-  width: 100%;
-  padding-right: 32px;
-  padding-left: 32px;
-  justify-content: space-between;
-  padding-bottom: 30px;
+  justify-content: center;
 }
 
 .social-link {
@@ -562,6 +559,10 @@ footer {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.social-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link:hover,
@@ -577,6 +578,7 @@ footer {
 
 .social-link svg {
   height: 20px;
+  width: 20px;
   fill: var(--social-icon-color);
 }
 
@@ -600,17 +602,28 @@ footer {
   justify-content: space-between;
 }
 .clients-list svg {
+  fill: var(--social-icon-color);
+  width: 106px;
+  height: 60px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
-  padding: 16px 32px;
-  fill: var(--social-icon-color);
 }
 
 .clients-link:hover .clients-svg,
 .clients-link:focus .clients-svg {
   fill: var(--link-active-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--link-active-color);
 }
 
@@ -708,16 +721,19 @@ footer {
   margin-right: 30px;
   border: 1px solid var(--portfolio-border-color);
   margin-bottom: 30px;
-  box-sizing: border-box;
 }
 
 .portfolio-discription {
   padding: 20px 24px;
 }
 
-.flex:hover,
-.flex:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
+}
+
+.portfolio-link {
+  display: block;
+  border: 1px solid var(--portfolio-border-color);
 }
